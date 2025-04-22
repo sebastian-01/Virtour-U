@@ -1,0 +1,30 @@
+---
+import Header from '../components/Header.astro';
+import Piso9Vid from '../components/Piso9vid.astro';
+import Piso9vid from '../components/Piso9vid.astro';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+    	<title>Virtour-U</title>
+		<Header />
+	</head>
+	<body>
+        <div class="espacio"></div>
+		<map class="pisos">
+			<Piso9Vid client:load/>
+			<div class="espacio-recorrido">
+				<ol class="recorridos">
+					<a href="/">Recorridos</a>
+					<a href="/">Piso 8</a>
+					<a href="/Piso9">Piso 9</a>
+				</ol>
+			</div>
+		</map>
+		<footer>
+			<h2>Nosotros</h2>
+		</footer>
+	</body>
+</html>
